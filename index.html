@@ -3,46 +3,410 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#000000">
-  <meta name="description" content="Providence Artificial Intelligence and Robotics Lab at Providence College. Our new website is coming soon.">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="The Providence AI and Robotics Lab at Providence College connects undergraduate learning with research in robotics, artificial intelligence, and their impact on people.">
   <title>PAIR Lab | Providence College</title>
   <link rel="icon" type="image/png" href="./assets/pair-logo-black.png">
-  <style>
-    :root { color-scheme: dark; font-family: Arial, Helvetica, sans-serif; color: #fff; background: #000; }
-    * { box-sizing: border-box; }
-    body { margin: 0; }
-    .page { width: min(860px, calc(100% - 48px)); margin: 0 auto; min-height: 100vh; min-height: 100svh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 56px 0; text-align: center; }
-    header { width: 100%; margin-bottom: 44px; }
-    .wordmark { display: block; width: min(700px, 100%); height: auto; margin: 0 auto; filter: invert(1); }
-    main { width: 100%; }
-    .eyebrow { margin: 0 0 18px; font-size: .875rem; line-height: 1.5; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; }
-    h1 { overflow-wrap: anywhere; margin: 0 0 24px; font-size: clamp(3rem, 6.4vw, 4.75rem); line-height: 1.08; letter-spacing: -.045em; font-weight: 600; }
-    .intro { max-width: 580px; margin: 0 auto; font-size: 1.125rem; line-height: 1.75; }
-    .affiliation { margin: 26px 0 0; font-size: 1rem; line-height: 1.6; font-weight: 600; }
-    footer { width: 100%; margin-top: 48px; font-size: .875rem; line-height: 1.8; }
-    footer p { margin: 0; }
-    @media (max-width: 600px) {
-      .page { width: calc(100% - 40px); padding: 40px 0; }
-      header { margin-bottom: 32px; }
-      h1 { font-size: clamp(2.6rem, 10vw, 3.5rem); }
-      .intro { font-size: 1rem; }
-      footer { margin-top: 36px; }
-    }
-  </style>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./script.js" defer></script>
 </head>
 <body>
-  <div class="page">
-    <header>
-      <img class="wordmark" src="./assets/pair-logo-black.png" width="2048" height="757" alt="PAIR — Providence Artificial Intelligence and Robotics Lab">
-    </header>
-    <main>
-      <section aria-labelledby="coming-soon">
-        <h1 id="coming-soon">Coming soon.</h1>
-        <p class="intro">We’re building a new home for our research, projects, and student work in artificial intelligence and robotics.</p>
-      </section>
-    </main>
-    <footer>
-    </footer>
-  </div>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <!-- Navigation -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="PAIR Lab home">
+        pair<span>LAB</span>
+      </a>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-nav"
+        hidden>
+        Menu
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#people">People</a>
+        <a href="#students">Students</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <!-- Home -->
+    <section
+      id="home"
+      class="hero container"
+      aria-labelledby="hero-title">
+      <p class="eyebrow">Providence College | Department of Mathematics and Computer Science </p>
+      <img
+        class="hero-logo"
+        src="./assets/pair-logo-black.png"
+        width="2048"
+        height="757"
+        alt="PAIR — Providence Artificial Intelligence and Robotics Lab">
+      <h1 id="hero-title">
+        Connecting undergraduate learning<br>
+        with research in AI and robotics
+      </h1>
+      <div class="hero-actions">
+        <a class="button button-light" href="#research">
+          Explore our research
+        </a>
+        <a class="button button-outline" href="#students">
+          Join the lab
+        </a>
+      </div>
+    </section>
+    <!-- About -->
+    <section
+      id="about"
+      class="section container"
+      aria-labelledby="about-title">
+      <div class="section-heading">
+        <p class="eyebrow" id="about-title">About the lab</p>
+      </div>
+      <div class="about-copy readable">
+        <p>
+          PAIR stands for Providence AI and Robotics Lab. Our name
+          reflects the collaboration between humans and machines
+          that guides our work.
+        </p>
+        <p>
+          At PAIR Lab, we help students connect what they
+          learn in the classroom to real problems. They investigate
+          how intelligent systems sense the world, make decisions,
+          and act, while considering who benefits from the technology
+          and how it should be used.
+        </p>
+      </div>
+      <!-- Replace this placeholder with a lab photo. -->
+        <figure class="wide-photo">
+          <img
+            src="./assets/lab-photo.jpg"
+            alt="The Providence AI and Robotics Lab">
+
+          <figcaption>
+            A space for undergraduate exploration in AI and robotics.
+          </figcaption>
+        </figure>
+      <div class="intro-video">
+        <div class="video-copy">
+          <p class="eyebrow">Meet the PAIR Lab</p>
+          <h3>Why the human factor matters</h3>
+          <p>
+            Hear about our approach to research, student learning,
+            and the relationship between people and intelligent
+            machines.
+          </p>
+        </div>
+        <!-- Replace with a video element or a titled YouTube iframe. -->
+        <div
+          class="media-placeholder video-placeholder"
+          role="img"
+          aria-label="Placeholder for the PAIR Lab introduction video">
+          <span class="media-kind">Lab introduction</span>
+          <span class="media-status">Video coming soon</span>
+        </div>
+      </div>
+    </section>
+    <!-- Research -->
+    <section
+      id="research"
+      class="section section-tinted"
+      aria-labelledby="research-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow" id="research-title">Research</p>
+          <p class="section-intro">
+            Our work brings together robotics, machine learning,
+            and efficient computing, with applications in the
+            environment, healthcare, and education.
+          </p>
+        </div>
+        <div class="research-grid">
+          <article class="research-item">
+            <p class="item-number" aria-hidden="true">01</p>
+            <h3>Autonomous robots</h3>
+            <p>
+              We study how robots navigate, gather information,
+              and make decisions in uncertain environments.
+              Applications include environmental monitoring
+              and collaboration among multiple robots.
+            </p>
+          </article>
+          <article class="research-item">
+            <p class="item-number" aria-hidden="true">02</p>
+            <h3>AI for healthcare</h3>
+            <p>
+              We explore how machine learning and signal processing
+              can help analyze health-related data, including
+              movement signals used in tremor assessment.
+            </p>
+          </article>
+          <article class="research-item">
+            <p class="item-number" aria-hidden="true">03</p>
+            <h3>Efficient computing</h3>
+            <p>
+              We investigate GPU-accelerated algorithms and parallel
+              computing for problems such as estimating a system’s
+              state from sensor measurements.
+            </p>
+          </article>
+          <article class="research-item">
+            <p class="item-number" aria-hidden="true">04</p>
+            <h3>Physical AI Education</h3>
+            <p>
+              We investigate how students demonstrate
+              their understanding of AI through experiments with physical systems.
+            </p>
+          </article>
+        </div>
+        <div class="platforms">
+          <h3>Our platforms</h3>
+          <p>
+            Students can work with mobile robots and robotic arms
+            to explore perception, control, and system integration.
+          </p>
+          <ul class="platform-list" aria-label="Robotic platforms">
+          <li class="platform-item">
+            <!-- Replace the placeholder with <img class="portrait platform-photo" src="./assets/mentorpi-a1.jpg" width="220" height="220" alt="Hiwonder MentorPi A1"> -->
+            <img class="portrait platform-photo" src="./assets/mentorpi.jpeg" width="220" height="220" alt="Hiwonder MentorPi A1">
+            <h4>Hiwonder MentorPi A1</h4>
+          </li>
+          <li class="platform-item">
+            <!-- Replace the placeholder with <img class="portrait platform-photo" src="./assets/vex-v5.jpg" width="220" height="220" alt="VEX Robotics V5"> -->
+            <img class="portrait platform-photo" src="./assets/vex-v5.jpeg" width="220" height="220" alt="VEX Robotics V5">
+            <h4>VEX Robotics V5</h4>
+          </li>
+          <li class="platform-item">
+            <!-- Replace the placeholder with <img class="portrait platform-photo" src="./assets/rosorin.jpg" width="220" height="220" alt="Hiwonder ROSorin"> -->
+            <img class="portrait platform-photo" src="./assets/ros-orin.jpeg" width="220" height="220" alt="Hiwonder ROSorin">
+            <h4>Hiwonder ROSorin</h4>
+          </li>
+          <li class="platform-item">
+            <!-- Replace the placeholder with <img class="portrait platform-photo" src="./assets/openarm.jpg" width="220" height="220" alt="OpenArm"> -->
+            <img class="portrait platform-photo" src="./assets/open-arm.jpeg" width="220" height="220" alt="OpenArm">
+            <h4>OpenArm</h4>
+          </li>
+        </ul>
+        </div>
+      </div>
+    </section>
+    <!-- Faculty -->
+    <section
+      id="people"
+      class="section container"
+      aria-labelledby="people-title">
+      <div class="section-heading">
+        <p class="eyebrow" id="people-title">People</p>
+      </div>
+      <div class="faculty-grid">
+        <!-- Paulo Padrão -->
+        <article class="faculty-member">
+          <!-- Replace this placeholder with Paulo's portrait. -->
+          <img
+            class="portrait"
+            src="./assets/paulo-padrao.png.webp"
+            width="220"
+            height="220"
+            alt="Paulo Padrão">
+          <h3>Dr. Paulo Padrão</h3>
+          <p class="faculty-role">
+            Assistant Professor of Computer Science
+          </p>
+          <p>
+            Research in autonomous robots, learning for robotics,
+            and Physical AI education, with a focus on how robots
+            perceive and make decisions in complex environments.
+          </p>
+          <div class="faculty-links">
+            <a
+              href="https://faculty.providence.edu/en/persons/paulo-v-padrao-lopes/"
+              target="_blank"
+              rel="noopener noreferrer">
+              Faculty website
+              <span class="sr-only">
+                for Paulo Padrão (opens in a new tab)
+              </span>
+            </a>
+            <a
+              href="https://scholar.google.com/citations?hl=en&amp;user=d0g-SicAAAAJ&amp;view_op=list_works&amp;sortby=pubdate"
+              target="_blank"
+              rel="noopener noreferrer">
+              Google Scholar
+              <span class="sr-only">
+                for Paulo Padrão (opens in a new tab)
+              </span>
+            </a>
+          </div>
+        </article>
+        <!-- Marwan Abdelatti -->
+        <article class="faculty-member">
+          <!-- Replace this placeholder with Marwan's portrait. -->
+          <img
+            class="portrait"
+            src="./assets/marwan-abdelatti.png.webp"
+            width="220"
+            height="220"
+            alt="Marwan Abdelatti">
+          <h3>Dr. Marwan Abdelatti</h3>
+          <p class="faculty-role">
+            Assistant Professor of Computer Science
+          </p>
+          <p>
+            Research in artificial intelligence and high-performance
+            computing, including GPU-based algorithms with
+            applications in robotics and healthcare.
+          </p>
+          <div class="faculty-links">
+            <a
+              href="https://faculty.providence.edu/en/persons/marwan-abdelatti/"
+              target="_blank"
+              rel="noopener noreferrer">
+              Faculty profile
+              <span class="sr-only">
+                for Marwan Abdelatti (opens in a new tab)
+              </span>
+            </a>
+            <a
+              href="https://scholar.google.com/citations?hl=en&amp;user=oWRcNTcAAAAJ&amp;view_op=list_works"
+              target="_blank"
+              rel="noopener noreferrer">
+              Google Scholar
+              <span class="sr-only">
+                for Marwan Abdelatti (opens in a new tab)
+              </span>
+            </a>
+          </div>
+        </article>
+          <!-- Michael Chou -->
+          <article class="faculty-member">
+            <!-- Replace this placeholder with Michael's portrait. -->
+            <img
+              class="portrait"
+              src="./assets/michael-chou.webp"
+              width="220"
+              height="220"
+              alt="Michael Chou">
+            <h3>Dr. Michael Chou</h3>
+            <p class="faculty-role">
+              Associate Professor of Mathematics
+            </p>
+            <p>
+              TBA
+            </p>
+            <div class="faculty-links">
+              <a
+                href="https://faculty.providence.edu/en/persons/michael-chou/"
+                target="_blank"
+                rel="noopener noreferrer">
+                Faculty website
+                <span class="sr-only">
+                  for Michael Chou (opens in a new tab)
+                </span>
+              </a>
+              
+            </div>
+          </article>
+    </section>
+    <!-- Undergraduate research -->
+    <section
+      id="students"
+      class="section section-tinted"
+      aria-labelledby="students-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Undergraduate research</p>
+          <h2 id="students-title">
+            Curiosity is a good place to start.
+          </h2>
+          <p class="section-intro">
+            You don’t need prior experience in robotics or AI to
+            get started. Bring an interest in learning, a
+            willingness to investigate, and questions you want
+            to explore.
+          </p>
+        </div>
+        <div class="student-layout">
+          <!-- Replace this placeholder with a student photograph. -->
+            <figure class="student-photo">
+              <img
+                src="./assets/photo2.JPG"
+                alt="Students working in the PAIR Lab">
+
+              <figcaption>
+                Connecting classroom ideas with hands-on activities.
+              </figcaption>
+            </figure>
+          <div class="student-copy">
+            <h3>What you can learn</h3>
+            <ol class="learning-list">
+              <li>
+                <h4>Develop your foundation</h4>
+                <p>
+                  Apply algorithms, data structures, and the
+                  basics of AI and machine learning.
+                </p>
+              </li>
+              <li>
+                <h4>Build and investigate</h4>
+                <p>
+                  Learn a robotic platform, work with sensors
+                  and motors, and test your ideas through
+                  experiments.
+                </p>
+              </li>
+              <li>
+                <h4>Share what you discover</h4>
+                <p>
+                  Discuss your progress in lab meetings and
+                  communicate your findings to the research
+                  community.
+                </p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact -->
+    <section
+      id="contact"
+      class="section container contact-section"
+      aria-labelledby="contact-title">
+      <p class="eyebrow">Get in touch</p>
+      <h2 id="contact-title">
+        Let’s explore an idea together.
+      </h2>
+      <p class="section-intro">
+        Interested in undergraduate research or a collaboration?
+        Contact us to discuss your interests and how you might
+        get involved.
+      </p>
+      <a
+        class="button button-light"
+        href="mailto:ppadraol@providence.edu">
+        Get in touch!
+      </a>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Providence AI and Robotics Lab</p>
+      <a
+        href="https://www.providence.edu/"
+        target="_blank"
+        rel="noopener noreferrer">
+        Providence College
+        <span class="sr-only">(opens in a new tab)</span>
+      </a>
+      <a href="#home">Back to top</a>
+    </div>
+  </footer>
 </body>
 </html>
